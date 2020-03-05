@@ -3,10 +3,6 @@ const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto'
 
 
 export default class FechaNacimiento{
-
-    
-
-
     constructor(dia,mes,año)
     {
     this.dia = dia

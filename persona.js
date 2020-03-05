@@ -1,5 +1,13 @@
-export default class Persona{
+import FechaNacimiento from "./fecha-nacimiento.js"
+import Nombre from "./nombre.js"
 
+export default class Persona{
+/**
+ * 
+ * @param {Nombre} nombre 
+ * @param {FechaNacimiento} fechaNac 
+ * @param {string} genero 
+ */
     constructor(nombre, fechaNac, genero){
         this._nombre = nombre
         this._fechaNac = fechaNac
@@ -7,7 +15,7 @@ export default class Persona{
     }
 
     getPerfil(){
-        return `${this._genero} ${this._fechaNac.getFormatoExtendido()} ${this._nombre.getCompleto()}`
+        return `${this._genero} ${this._fechaNac.getFormatoCorto()} ${this._nombre.getCompleto()}`
     }
 
     getNombre(){return this._nombre}
